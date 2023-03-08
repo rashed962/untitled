@@ -29,11 +29,11 @@ class _MainScreenState extends State<MainScreen> {
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: currentIndex, // Todo: represent current index for bottomNavigationBarItem
+          currentIndex: currentIndex,
           onTap: (index)
           {
             setState(() {
-              // Todo: use setState to rebuild user interface as there is change on current index value
+
               currentIndex = index;
             });
           },
@@ -44,7 +44,7 @@ class _MainScreenState extends State<MainScreen> {
             BottomNavigationBarItem(icon: Icon(Icons.person),label: 'Profile'),
           ],
         ),
-        // Todo: get The Screen using layoutScreens and the index of the list ( current index )
+
         body: layoutScreens[currentIndex]
     );
   }

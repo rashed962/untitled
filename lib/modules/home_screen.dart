@@ -11,12 +11,12 @@ class HomeScreen extends StatelessWidget {
         children:
         [
           Stack(
-            alignment: AlignmentDirectional.bottomStart,  // Todo: This make second widget (Padding) on bottomEnd for first widget ( Image )
+            alignment: AlignmentDirectional.bottomStart,
             children:
             [
               Image.asset('assets/images/screen1.png',height: 480,width: double.infinity,fit: BoxFit.cover,),
               Padding(
-                padding: EdgeInsets.only(left: 15,bottom: 30),    // Todo: Padding used for Inner sides (( from right and bottom only ))
+                padding: EdgeInsets.only(left: 15,bottom: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -41,11 +41,11 @@ class HomeScreen extends StatelessWidget {
           Container(
               height: 400,
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 10),    // Todo: Padding used for Inner sides (( horizontal contain right and left , vertical contain top and bottom ))
+              padding: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 10),
               child: ListView.separated(
-                scrollDirection: Axis.horizontal,    // Todo: ( Direction of Scroll )) , one of horizontal and vertical , default: Axis.vertical
-                itemCount: 4,  // Todo: represent number of widgets on ListView
-                // Todo: itemBuilder contain The widget which i will build it (( Product Item ))
+                scrollDirection: Axis.horizontal,
+                itemCount: 4,
+
                 itemBuilder: (context,index){
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,11 +55,11 @@ class HomeScreen extends StatelessWidget {
                         children:
                         [
                           Image.asset('assets/images/man.png',height: 100,width: 125,fit: BoxFit.fill,),
-                          // Todo: Image.asset(path) => with local images || images that already saved on Project File , Image.network(url) => get image from Network using its url
+
                           MaterialButton(
                             onPressed: ()
                             {
-                              print("Done!");  // Todo: This command will be operated when I click on this button
+                              print("Done!");
                             },
                             color: Colors.red,
                             height: 40,
@@ -70,10 +70,10 @@ class HomeScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 10,),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Todo: spaceEvenly => make equal space between each widget
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children:
                         [
-                          // Todo: Icon widget contains : Icon(IconData) => IconData == Icons.icon's name
+
                           Icon(Icons.favorite,color: Colors.yellow,size: 20,),
                           Icon(Icons.favorite,color: Colors.yellow,size: 20,),
                           Icon(Icons.favorite,color: Colors.yellow,size: 20,),
@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(height: 7,),
                       Text("Product's category",style: TextStyle(),),
                       SizedBox(height: 7,),
-                      // Todo: This comment equal using RichText
+
                       /*
                     Row(
                       children: [
@@ -97,12 +97,12 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                      */
-                      // Todo: I can replace RichText with Row with no difference
+
                       RichText(
                         text: const TextSpan(
                             children:
                             [
-                              // Todo: used \$ as in Dart I use $ and after it {} to get the value for variable so I had to put \ before $ to know that i want to use it as a currency
+
                               TextSpan(text: "15 \$   ",style: TextStyle(decoration: TextDecoration.lineThrough,color: Colors.black)),
                               TextSpan(text: "10 \$ ",style: TextStyle(color: Colors.red)),
                             ]
@@ -111,9 +111,9 @@ class HomeScreen extends StatelessWidget {
                     ],
                   );
                 },
-                // Todo: separatorBuilder => Each widget is separated from the other through the widget that I will make for it return
+
                 separatorBuilder : (context,i){
-                  return SizedBox(width : 10);    // Todo: here i used width argument as products will be shown horizontal
+                  return SizedBox(width : 10);
                 },
               )
           )

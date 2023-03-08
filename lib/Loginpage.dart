@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/Loginpage.dart';
 
-import 'register.dart';
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/Loginpage.dart';
 import 'package:untitled/modules/home_screen.dart';
-import 'register.dart';
+
 import 'package:untitled/layout/main_screen.dart';
 
 
