@@ -98,19 +98,7 @@ class _MyLoginState extends State<MyLogin> {
                                 child: Text("LOGIN💕",style: TextStyle(fontSize: 17,color: Colors.white),),
                               ),
 
-                          //     CircleAvatar(
-                          //       radius: 30,
-                          //       backgroundColor: Color(0xff4c505b),
-                          //       child: IconButton(
-                          //           color: Colors.white,
-                          //           onPressed: () {
-                          //             Navigator.pushNamed(context, 'HomeScreen');
-                          //
-                          //           },
-                          //           icon: Icon(
-                          //             Icons.arrow_forward,
-                          //           )),
-                          //     )
+
                              ],
                           ),
                           SizedBox(
@@ -119,10 +107,7 @@ class _MyLoginState extends State<MyLogin> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              // Text("Don`t Have Acount ?",
-                              //  style: TextStyle(color: Colors.red
-                              //  ,
-                              //  fontSize: 20),),
+
                               TextButton(
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'register');

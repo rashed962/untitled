@@ -88,15 +88,7 @@ class HomeScreen extends StatelessWidget {
                       Text("Product's category",style: TextStyle(),),
                       SizedBox(height: 7,),
 
-                      /*
-                    Row(
-                      children: [
-                        Text("15 \$",style: TextStyle(decoration: TextDecoration.lineThrough,color: Colors.black)),
-                        SizedBox(width: 10,),
-                        Text("10 \$",style: TextStyle(color: Colors.red)),
-                      ],
-                    ),
-                     */
+
 
                       RichText(
                         text: const TextSpan(
